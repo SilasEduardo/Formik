@@ -25,6 +25,7 @@ function App() {
       <Formik
       validate={validate}
       onSubmit={onSubmit}
+
       initialValues={
         {
           name: '',
