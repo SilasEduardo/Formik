@@ -1,8 +1,9 @@
 import React from 'react'
-import { Formik, Field } from 'formik';
+import { Formik, Field, Form } from 'formik';
 
 function App() {
-  function onSubmit(){
+  function onSubmit(value, actions){
+    console.log("SUBMIT", value)
 
   }
   return (
@@ -16,7 +17,7 @@ function App() {
         }
       }
       render={({values})=>(
-        <form  >
+        <Form >
         <div>
           <label>Nome</label>
           <Field name='name' type='text'/>
@@ -27,7 +28,7 @@ function App() {
         </div>
         <button type='submit'>enviar</button>
   
-      </form>
+      </Form>
 
       )}
         />
